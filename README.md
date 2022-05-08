@@ -27,4 +27,5 @@ In the project, I implement the process of training and building AI as well as s
 \
 I then took the AI that able to get the score of 400 fitness-score to be the hardest AI to play against at in the game (impossible). I took the AI that able to get teh score of 200 to be Hard, 100 to be Medium and 50 to be Easy.
 \
+\
 Note: pygame library need to be installed before running this project.
