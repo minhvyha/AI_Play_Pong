@@ -20,5 +20,5 @@
 - NEAT functions
 
 ### About this project
-
+This project using NEAT (**NeuroEvolution of Augmenting Topologies**) to build and train an AI to play a simple game (Pong). I implemeneted all the interface of the game and the algorithms to play the game. The AI building and training is supported by YouTuber 'Tech With Tim'.
 **Note: pygame and NEAT library need to be installed before running this project.**
