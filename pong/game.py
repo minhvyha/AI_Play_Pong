@@ -14,6 +14,7 @@ PADDLE_WIDTH, PADDLE_HEIGHT = 20, 100
 
 FONT = pygame.font.SysFont('comicsans', 50)
 FONT_start = pygame.font.SysFont('comicsans', 37)
+FONT_start_medium = pygame.font.SysFont('comicsans', 32)
 FONT_start_small = pygame.font.SysFont('comicsans', 20)
 
 
@@ -134,16 +135,16 @@ class Game:
     def draw_start(self):
         self.window.fill(BLACK)
 
-        start = FONT_start.render('PONG', 1, WHITE)
-        intro = FONT_start.render('First to 10 WIN!!!', 1, WHITE)
-        space = FONT_start_small.render('Press Space To Start', 1, WHITE)
+        start = FONT_start.render('AI PLAYING PONG', 1, WHITE)
+        intro = FONT_start_medium.render('First to 10 WIN!!!', 1, WHITE)
+        space = FONT_start_small.render('1. Easy 2. Medium 3. Hard 4. Impossible', 1, WHITE)
         credit = FONT_start_small.render('CREDIT to "TECH WITH TIM"', 1, WHITE)
-        minh = FONT_start_small.render('Improve by Minh Vy Ha', 1, WHITE)
+        minh = FONT_start_small.render('Improved by Minh Vy Ha', 1, WHITE)
         self.window.blit(start, (self.window_width // 2 - start.get_width() // 2, 20))
-        self.window.blit(intro, (self.window_width // 2 - intro.get_width() // 2, 80))
-        self.window.blit(space, (self.window_width // 2 - space.get_width() // 2, 150))
-        self.window.blit(credit, (self.window_width // 2 - credit.get_width() // 2, 200))
-        self.window.blit(minh, (self.window_width // 2 - minh.get_width() // 2, 250))
+        self.window.blit(intro, (self.window_width // 2 - intro.get_width() // 2, 90))
+        self.window.blit(minh, (self.window_width // 2 - minh.get_width() // 2, 160))
+        self.window.blit(credit, (self.window_width // 2 - credit.get_width() // 2, 210))
+        self.window.blit(space, (self.window_width // 2 - space.get_width() // 2, 260))
         x = self.window_width // 2 - 15 // 2
 
         for i in range(310, self.window_height - 10, 50):
