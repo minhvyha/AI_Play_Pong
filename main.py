@@ -48,7 +48,6 @@ class PongGame:
                 net = best
                 started = True
             if keys[pygame.K_r] and end == True:
-                started = True
                 end = False
                 self.game.reset()
 
@@ -71,12 +70,12 @@ class PongGame:
                 self.game.move_paddle(left=True, up=False)
 
             if self.game.left_score >= 10:
-                t = FONT_start.render('Left Player WIN!!!', 1, WHITE)
+                t = FONT_start.render('Player WIN!!!', 1, WHITE)
                 end = True
                 started = False
 
             if self.game.right_score >= 10:
-                t = FONT_start.render('Right Player WIN!!!', 1, WHITE)
+                t = FONT_start.render('AI WIN!!!', 1, WHITE)
                 end = True
                 started = False
             if started:
@@ -158,7 +157,7 @@ def eval_genomes(genomes, config):
             genome2.fitness = 0 if genome2.fitness == None else genome2.fitness
             pong = PongGame(win, width, height)
 
-            force_quit = pong.train_ai(genome1, genome2, config, draw=True)
+            force_quit = pong.train_ai(genome1, genome2, config, draw=False)
             if force_quit:
                 quit()
 
