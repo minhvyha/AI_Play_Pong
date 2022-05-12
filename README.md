@@ -26,4 +26,5 @@ This project using NEAT (**NeuroEvolution of Augmenting Topologies**) to build a
 The AI receive three different inputs and output one of three different instructions. AI receives the coordinate of its paddle, coordinate of the ball and the exact distance from its paddle to the ball and decide if the paddle will stay still, move up or down. Whenever its paddle hit the ball, the AI fitness get increase and when the paddle miss the ball, its fitness score get deducted. Some of the worst AI will get removed and the AI with the highest fitness score will be combined to produce a new generation to continue.
 \
 ### What I learn
+During this project, I have an opportunity to work with NEAT a library to simulate neural network for machine learning. I have learnt that the 
 **Note: pygame and NEAT library need to be installed before running this project.**
