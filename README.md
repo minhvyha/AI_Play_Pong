@@ -1,7 +1,7 @@
 # **AI Play Pong With NEAT**
 
 ## **Video Demo:**
-## [Watch it](https://youtu.be/JI2hABcPUBY)
+### [Watch it](https://youtu.be/JI2hABcPUBY)
 
 ## **Description:**
 
